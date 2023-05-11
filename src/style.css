@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: #333;
+    color: #EEEEEE;
+    font-family: 'Press Start 2P', sans-serif;
+    overflow: hidden;
+}
+
+main{
+    height: 100%;
+}
+
+.top{
+    margin: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.topContainer{
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topContainer h3{
+    font-size: .75rem;
+}
+
+#againBtn{
+    padding: 18px 20px;
+    font-size: 1.5rem;
+    background-color: #EEEEEE;
+    border: none;
+    color: #333;
+    font-family: 'Press Start 2P', sans-serif;
+    cursor: pointer;
+}
+
+.top h1{
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+.messageContainer{
+    margin-top: 3.25rem;
+    width: 100%;
+    height: 2px;
+    border: 3px solid #EEEEEE;
+    position: relative;
+}
+
+#compGuess{
+    width: 110px;
+    height: 110px;
+    background-color: #EEEEEE;
+    color: #333;
+    font-size: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+.down{
+    height: calc(100vh - 350px);
+    margin-top: 3.25rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.left input{
+    height: 90px;
+    width: 250px;
+    margin-bottom: 1rem;
+    background-color: inherit;
+    border: 4px solid #EEEEEE;
+    color: #EEEEEE;
+    font-size: 3.5rem;
+    font-family: 'Press Start 2P', sans-serif;
+    text-align: center;
+}
+
+#checkBtn{
+    padding: 18px 20px;
+    background-color: #EEEEEE;
+    color: #333;
+    border: none;
+    font-size: 1.5rem;
+    font-family: 'Press Start 2P', sans-serif;
+    cursor: pointer;
+}
+
+.right p{
+    margin: 1rem;
+    width: 100%;
+    font-size: 1.25rem;
+}
+
+#message{
+    margin-bottom: 3.25rem;
+}
