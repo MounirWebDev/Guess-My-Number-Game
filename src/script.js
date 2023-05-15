@@ -19,19 +19,19 @@ const checkUserAnswer = compVal => {
 	if (compVal === convUserGuess) {
 		body.style.background = 'green';
 		compGuess.innerHTML = compVal;
-		message.innerHTML = 'correct number!';
+		message.innerHTML = '👌 correct number!';
 		highscore.innerHTML = score.innerHTML;
 	} else if (convUserGuess !== 0 && Number(score.innerHTML) > 1) {
 		body.style.background = '#333';
 		score.innerHTML = Number(score.innerHTML) - 1;
 		compVal > convUserGuess
-			? (message.innerHTML = 'too low!')
-			: (message.innerHTML = 'too high!');
+			? (message.innerHTML = '👇📉 too low!')
+			: (message.innerHTML = '👆📈 too high!');
 	} else if (convUserGuess !== 0 && Number(score.innerHTML) === 1) {
 		score.innerHTML = Number(score.innerHTML) - 1;
-		message.innerHTML = 'you lost the game!';
+		message.innerHTML = '💥 you lost the game!';
 	} else if (convUserGuess === 0) {
-		message.innerHTML = 'no number!';
+		message.innerHTML = '⛔ no number!';
 	}
 };
 const geussAgain = () => {
