@@ -7,7 +7,7 @@
     <!-- CSS FILE -->
     <link rel="stylesheet" href="./src/style.css">
     <!-- JS FILE -->
-    <script src="./src/script.js"></script>
+    <script src="./src/script.js" defer></script>
     <title>Guess My Number</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
         <section class="top">
             <div class="topContainer">
                 <button id="againBtn">Again!</button>
-                <h3>Between 1 and 20</h3>
+                <h3>Between 0 and 20</h3>
             </div>
             <h1>Guess My Number!</h1>
             <div class="messageContainer">
@@ -31,13 +31,13 @@
             </div>
             <div class="right">
                 <p id="message">
-                    Start Guessing...
+                    start guessing...
                 </p>
-                <p id="score">
-                    Score: 20
+                <p>
+                    Score: <span id="score">20</span>
                 </p>
-                <p id="highscore">
-                    Highscore: 0
+                <p>
+                    Highscore: <span id="highscore">0</span>
                 </p>
             </div>
         </section>
