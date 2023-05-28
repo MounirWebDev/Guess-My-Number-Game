@@ -21,16 +21,16 @@ const checkUserAnswer = compVal => {
 		compGuess.innerHTML = compVal;
 		message.innerHTML = '👌 correct number!';
 		highscore.innerHTML = score.innerHTML;
-	} else if (convUserGuess !== 0 && Number(score.innerHTML) > 1) {
+	} else if (convUserGuess && Number(score.innerHTML) > 1) {
 		body.style.background = '#333';
 		score.innerHTML = Number(score.innerHTML) - 1;
 		compVal > convUserGuess
 			? (message.innerHTML = '👇📉 too low!')
 			: (message.innerHTML = '👆📈 too high!');
-	} else if (convUserGuess !== 0 && Number(score.innerHTML) === 1) {
+	} else if (convUserGuess && Number(score.innerHTML) === 1) {
 		score.innerHTML = Number(score.innerHTML) - 1;
 		message.innerHTML = '💥 you lost the game!';
-	} else if (convUserGuess === 0) {
+	} else if (!convUserGuess) {
 		message.innerHTML = '⛔ no number!';
 	}
 };
