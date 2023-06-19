@@ -18,6 +18,7 @@ const checkUserAnswer = compVal => {
 	if (compVal === convUserGuess) {
 		body.style.background = 'green';
 		compGuess.innerHTML = compVal;
+		compGuess.style.width = '220px';
 		message.innerHTML = '👌 correct number!';
 		highscore.innerHTML = score.innerHTML;
 	} else if (convUserGuess && Number(score.innerHTML) > 1) {
@@ -37,6 +38,7 @@ const geussAgain = () => {
 	compVal = calcRandomNumber();
 	body.style.background = '#333';
 	compGuess.innerHTML = '?';
+	compGuess.style.width = '110px'
 	userGuess.value = '';
 	message.innerHTML = 'start guessing...';
 	score.innerHTML = '20';
