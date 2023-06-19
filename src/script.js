@@ -10,7 +10,6 @@ const message = document.getElementById('message');
 
 const calcRandomNumber = () => {
 	let number = Math.floor(Math.random() * 20) + 1;
-	console.log(number);
 	return number;
 };
 const checkUserAnswer = compVal => {
